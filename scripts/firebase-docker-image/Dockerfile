@@ -1,4 +1,4 @@
-FROM node:lts-alpine AS app-env
+FROM node:24.13.0-alpine3.23 AS app-env
 
 # Install Python and Java and pre-cache emulator dependencies.
 RUN apk add --no-cache python3 py3-pip openjdk11-jre bash && \
